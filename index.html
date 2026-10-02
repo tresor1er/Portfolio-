@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Kolombia Triomphant Tresor 1er — Étudiant en cybersécurité à l'Université de Kara">
+  <title>Kolombia Triomphant Tresor 1er | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="loading">
+    <span class="loading-text">_ Chargement du système...</span>
+  </div>
+
+  <div id="canvas-container"></div>
+  <div class="scanlines"></div>
+  <div class="grid-overlay"></div>
+
+  <div id="content-wrapper">
+
+    <nav class="navbar">
+      <a href="#home" class="nav-logo">KT<span class="accent">.</span></a>
+      <div class="nav-links">
+        <a href="#home" class="nav-link">Accueil</a>
+        <a href="#about" class="nav-link">À propos</a>
+        <a href="#skills" class="nav-link">Compétences</a>
+        <a href="#projects" class="nav-link">Projets</a>
+        <a href="#devsecops" class="nav-link">DevSecOps</a>
+        <a href="#experience" class="nav-link">Expérience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- Hero -->
+    <section class="section" id="home">
+      <div class="hero-glow"></div>
+      <div class="container hero-content">
+        <div class="status-badge reveal">
+          <span class="pulse-dot"></span>
+          EN LIGNE — UNIVERSITÉ DE KARA
+        </div>
+
+        <p class="hero-greeting reveal delay-1">&gt; initialisation du système...</p>
+
+        <h1 class="reveal delay-2">
+          Kolombia Triomphant<br>
+          <span class="glow-text">Tresor 1er</span>
+        </h1>
+
+        <h2 class="subtitle reveal delay-3">
+          Licence Pro Sécurité Informatique & Cybersécurité · Université de Kara
+        </h2>
+
+        <p class="description reveal delay-4">
+          Étudiant en 3<sup>ème</sup> année spécialisé en sécurité informatique,
+          avec une double compétence en développement <strong>Spring Boot</strong> +
+          <strong>Angular</strong>. Je fais le pont entre <strong>AppSec/DevSecOps</strong> et
+          sécurité offensive/défensive pour concevoir des systèmes résilients.
+        </p>
+
+        <div class="button-group reveal delay-5">
+          <a href="#projects" class="btn-primary">
+            <i data-lucide="terminal"></i> Voir mes projets
+          </a>
+          <a href="https://github.com/tresor1er" target="_blank" rel="noopener" class="btn-secondary">
+            <i data-lucide="github"></i> GitHub
+          </a>
+          <a href="mailto:kolombiatresor@gmail.com" class="btn-secondary">
+            <i data-lucide="mail"></i> Contact
+          </a>
+        </div>
+
+        <div class="hero-stats reveal delay-6">          <div class="stat">
+            <span class="stat-value">3<sup>ème</sup></span>
+            <span class="stat-label">Année</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-value">CYBER</span>
+            <span class="stat-label">Spécialité</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-value">FULL</span>
+            <span class="stat-label">Stack Java</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// 01 — À propos</span>
+          <h2>Qui suis-je ?</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass reveal">
+            <div class="avatar-ring">
+              <img src="https://avatars.githubusercontent.com/u/214694570?v=4" alt="Avatar GitHub" class="avatar" loading="lazy">
+            </div>
+            <div class="about-info">
+              <h3>Kolombia Triomphant Tresor 1er</h3>
+              <p class="about-role">Étudiant en Cybersécurité</p>
+              <p>
+                Actuellement en 3<sup>ème</sup> année à l'<strong>Université de Kara</strong>, je me forme
+                aux fondamentaux de la cybersécurité : analyse de vulnérabilités, sécurité réseau,
+                cryptographie et réponse aux incidents.
+              </p>
+              <p>
+                En parallèle, je développe des applications web et mobiles avec
+                <strong>Java (Spring Boot)</strong>, <strong>Angular</strong>, Flutter et React Native.
+                Mon objectif : allier sécurité et développement pour créer des systèmes résilients.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-pillars">
+            <div class="pillar glass reveal delay-1">
+              <div class="pillar-icon"><i data-lucide="shield"></i></div>
+              <h4>Sécurité</h4>
+              <p>Pentest, analyse réseau, OWASP, cryptographie appliquée</p>
+            </div>
+            <div class="pillar glass reveal delay-2">
+              <div class="pillar-icon"><i data-lucide="code-2"></i></div>
+              <h4>Développement</h4>
+              <p>Spring Boot, Angular, APIs REST, applications mobiles</p>
+            </div>
+            <div class="pillar glass reveal delay-3">
+              <div class="pillar-icon"><i data-lucide="graduation-cap"></i></div>
+              <h4>Formation</h4>
+              <p>Université de Kara — Licence Cybersécurité, 3<sup>ème</sup> année</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// 02 — Compétences</span>
+          <h2>Stack technique</h2>
+          <p class="description">Technologies et outils que j'utilise au quotidien</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-category glass reveal">
+            <h3><i data-lucide="shield-alert"></i> Cybersécurité</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Pentest</span>
+              <span class="skill-tag">Wireshark</span>
+              <span class="skill-tag">Kali Linux</span>
+              <span class="skill-tag">Nmap</span>
+              <span class="skill-tag">Metasploit</span>
+              <span class="skill-tag">Burp Suite</span>
+              <span class="skill-tag">OWASP Top 10</span>
+              <span class="skill-tag">Cryptographie</span>
+              <span class="skill-tag">Analyse réseau</span>
+              <span class="skill-tag">Linux / Windows</span>
+            </div>
+          </div>
+
+          <div class="skill-category glass reveal delay-1">
+            <h3><i data-lucide="coffee"></i> Backend & Java</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Spring Boot</span>
+              <span class="skill-tag">REST API</span>
+              <span class="skill-tag">Maven</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Node.js</span>
+            </div>
+          </div>
+
+          <div class="skill-category glass reveal delay-2">
+            <h3><i data-lucide="layout"></i> Frontend & Mobile</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Angular</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">React Native</span>
+              <span class="skill-tag">Flutter</span>
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="skill-category glass reveal delay-3">
+            <h3><i data-lucide="wrench"></i> Outils</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git / GitHub</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Vercel</span>
+              <span class="skill-tag">Python</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// 03 — Projets</span>
+          <h2>Mes réalisations</h2>
+          <p class="description">Projets académiques et personnels disponibles sur GitHub</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card glass reveal">
+            <div class="project-header">
+              <span class="project-index">01</span>
+              <div class="project-links-top">
+                <a href="https://github.com/tresor1er/mono" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"></i></a>
+              </div>
+            </div>
+            <h3>Mono</h3>
+            <p>Application backend Java avec Spring Boot. Architecture modulaire et API REST pour la gestion de données.</p>
+            <div class="tags">
+              <span class="cyber-badge">Java</span>
+              <span class="cyber-badge">Spring Boot</span>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal delay-1">
+            <div class="project-header">
+              <span class="project-index">02</span>
+              <div class="project-links-top">
+                <a href="https://github.com/tresor1er/saas" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"></i></a>
+              </div>
+            </div>
+            <h3>SaaS Platform</h3>
+            <p>Plateforme SaaS développée en TypeScript. Solution web moderne avec architecture scalable.</p>
+            <div class="tags">
+              <span class="cyber-badge">TypeScript</span>
+              <span class="cyber-badge">SaaS</span>
+              <span class="cyber-badge">Web</span>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal delay-2">
+            <div class="project-header">
+              <span class="project-index">03</span>
+              <div class="project-links-top">
+                <a href="https://github.com/tresor1er/marketshop_flutter" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"></i></a>
+              </div>
+            </div>
+            <h3>MarketShop Flutter</h3>
+            <p>Application mobile e-commerce cross-platform. Catalogue produits, panier et interface utilisateur fluide.</p>
+            <div class="tags">
+              <span class="cyber-badge">Flutter</span>
+              <span class="cyber-badge">Dart</span>
+              <span class="cyber-badge">Mobile</span>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal delay-3">
+            <div class="project-header">
+              <span class="project-index">04</span>
+              <div class="project-links-top">
+                <a href="https://github.com/tresor1er/marketshop_reactnative" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"></i></a>
+              </div>
+            </div>
+            <h3>MarketShop React Native</h3>
+            <p>Version React Native de l'application MarketShop. Expérience mobile native pour iOS et Android.</p>
+            <div class="tags">
+              <span class="cyber-badge">React Native</span>
+              <span class="cyber-badge">JavaScript</span>
+              <span class="cyber-badge">Mobile</span>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal">
+            <div class="project-header">
+              <span class="project-index">05</span>
+              <div class="project-links-top">
+                <a href="https://github.com/tresor1er/mini_agence_de-voyage_togo" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"></i></a>
+                <a href="https://mini-agence-de-voyage-togo.vercel.app" target="_blank" rel="noopener" aria-label="Demo live"><i data-lucide="external-link"></i></a>
+              </div>
+            </div>
+            <h3>Mini Agence de Voyage Togo</h3>
+            <p>Site web d'agence de voyage togolaise. Réservations, destinations et présentation des offres touristiques.</p>
+            <div class="tags">
+              <span class="cyber-badge">JavaScript</span>
+              <span class="cyber-badge">Web</span>
+              <span class="cyber-badge">Vercel</span>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal delay-1">
+            <div class="project-header">
+              <span class="project-index">06</span>
+              <div class="project-links-top">
+                <a href="https://github.com/tresor1er/tresor1er.github.io" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"></i></a>
+              </div>
+            </div>
+            <h3>Jeu Éducatif</h3>
+            <p>Jeu éducatif interactif conçu pour les moins de 16 ans. Apprentissage ludique via le web.</p>
+            <div class="tags">
+              <span class="cyber-badge">JavaScript</span>
+              <span class="cyber-badge">Éducatif</span>
+              <span class="cyber-badge">Web</span>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="projects-cta reveal">
+          <a href="https://github.com/tresor1er" target="_blank" rel="noopener" class="btn-primary">
+            <i data-lucide="github"></i> Voir tous mes repos
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DevSecOps -->
+    <section class="section" id="devsecops">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// 03.5 — DevSecOps & AppSec</span>
+          <h2>Développement sécurisé</h2>
+          <p class="description">Mon approche : intégrer la sécurité dès la conception du code</p>
+        </div>
+
+        <div class="devsecops-grid">
+          <div class="devsecops-card glass reveal">
+            <div class="devsecops-icon"><i data-lucide="lock"></i></div>
+            <h3>Secure Coding</h3>
+            <p>Application des bonnes pratiques de codage sécurisé : validation des entrées, gestion des erreurs, chiffrement des données sensibles.</p>
+          </div>
+
+          <div class="devsecops-card glass reveal delay-1">
+            <div class="devsecops-icon"><i data-lucide="search"></i></div>
+            <h3>Code Review</h3>
+            <p>Revues de code source pour identifier les vulnérabilités applicatives et appliquer les principes OWASP dès les premières lignes.</p>
+          </div>
+
+          <div class="devsecops-card glass reveal delay-2">
+            <div class="devsecops-icon"><i data-lucide="server"></i></div>
+            <h3>Architecture Robuste</h3>
+            <p>Conception d'architectures applicatives fiables avec Spring Boot, gestion des authentifications (JWT, OAuth2) et autorisation fine.</p>
+          </div>
+
+          <div class="devsecops-card glass reveal delay-3">
+            <div class="devsecops-icon"><i data-lucide="bug"></i></div>
+            <h3>Analyse Vulnérabilités</h3>
+            <p>Compréhension approfondie de la logique des failles applicatives (Injection, XSS, CSRF) pour développer des contre-mesures efficaces.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// 04 — Expérience</span>
+          <h2>Parcours</h2>
+          <p class="description">Mon parcours académique et professionnel</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content glass">
+              <span class="timeline-date">2023 — Présent</span>
+              <h3>Licence Professionnelle — Sécurité Informatique & Cybersécurité</h3>
+              <p class="timeline-place">Université de Kara</p>
+              <p>Formation en administration systèmes (Linux, Windows), sécurité des réseaux, analyse de vulnérabilités, cryptographie et DevSecOps. 3<sup>ème</sup> année en cours.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal delay-1">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content glass">
+              <span class="timeline-date">2024 — Présent</span>
+              <h3>Développeur Full Stack Java / Angular</h3>
+              <p class="timeline-place">Projets personnels & académiques</p>
+              <p>Conception d'applications web sécurisées avec Spring Boot (backend) et Angular (frontend). Application des principes Secure Coding et revue de code.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal delay-2">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content glass">
+              <span class="timeline-date">2024</span>
+              <h3>Certification IT Essentials — Cisco Networking Academy</h3>
+              <p class="timeline-place">Cisco</p>
+              <p>Certification spécialisée couvrant les fondamentaux de l'infrastructure IT, le matériel, les réseaux et la résolution de problèmes.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal delay-3">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content glass">
+              <span class="timeline-date">Candidature active</span>
+              <h3>Vivier National de Compétences en Cybersécurité</h3>
+              <p class="timeline-place">ANCy — Agence Nationale de Cybersécurité (Togo)</p>
+              <p>Candidature à l'AMI pour contribuer à la Stratégie Nationale de Cybersécurité 2024-2028 : audit applicatif, développement sécurisé, sensibilisation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// 05 — Contact</span>
+          <h2>Me contacter</h2>
+          <p class="description">N'hésitez pas à me contacter pour toute opportunité</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="contact-item glass">
+              <div class="contact-icon"><i data-lucide="mail"></i></div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:kolombiatresor@gmail.com">kolombiatresor@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item glass">
+              <div class="contact-icon"><i data-lucide="github"></i></div>
+              <div>
+                <h4>GitHub</h4>
+                <a href="https://github.com/tresor1er" target="_blank" rel="noopener">github.com/tresor1er</a>
+              </div>
+            </div>
+            <div class="contact-item glass">
+              <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+              <div>
+                <h4>Localisation</h4>
+                <p>Kara, Togo</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form glass reveal delay-1" id="contact-form">
+            <div class="form-group">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" required placeholder="Votre nom">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="votre@email.com">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Votre message..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary">
+              <i data-lucide="send"></i> Envoyer
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; <span id="year"></span> Kolombia Triomphant Tresor 1er</p>
+        <p class="footer-sub">Université de Kara · Cybersécurité · Spring Boot · Angular</p>
+        <div class="footer-links">
+          <a href="https://github.com/tresor1er" target="_blank" rel="noopener"><i data-lucide="github"></i></a>
+          <a href="mailto:kolombiatresor@gmail.com"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
